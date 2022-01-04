@@ -16,7 +16,7 @@
 
 ifneq ($(filter m32,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device//m32/
+LOCAL_PATH := device/samsung/m32/
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

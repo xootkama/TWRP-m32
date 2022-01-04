@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device//m32/
+LOCAL_PATH := device/samsung/m32/
 
 PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_m32.mk

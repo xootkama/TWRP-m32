@@ -14,9 +14,19 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Inherit from m32 device
+$(call inherit-product, device/samsung/m32/device.mk)
+
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 PRODUCT_DEVICE := m32
 PRODUCT_NAME := omni_m32
-PRODUCT_BRAND := 
-PRODUCT_MODEL := 
-PRODUCT_MANUFACTURER := 
+PRODUCT_BRAND := samsung    
+PRODUCT_MODEL := SM-M325F
+PRODUCT_MANUFACTURER := samsung
+

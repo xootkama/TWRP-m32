@@ -17,3 +17,9 @@
 LOCAL_PATH := device/samsung/m32/
 
 PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_m32.mk
+
+
+COMMON_LUNCH_CHOICES := \
+    omni_m32-user \
+    omni_m32-userdebug \
+    omni_m32-eng
